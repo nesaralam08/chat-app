@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <section class="main">
+        <div id="user-form" class="user-form">
+            <h2>Enter To Chat</h2>
+            <div>
+                    <input type="text" placeholder="Enter Name" required id="name">
+                    <button id="submit">Go</button>
+                </form>
+            </div>
+        </div>
+        <!-- Nesar Alam -->
+        <div class="chat-box" id="chat-box">
+            <div class="header">
+                <div class="online">
+                    <p id="online-show"></p>
+                </div>
+                <button id="exit">Exit</button>
+            </div>
+            <div class="message-box" id="message-box">
+                
+            </div>
+            <div class="footer">
+                <input type="text" placeholder="Send Message.." name="message" id="message" required>
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </section>
+    <script src="/script.js"></script>
+    <!-- Nesar Alam -->
+</body>
+</html>
