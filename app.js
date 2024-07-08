@@ -1,7 +1,7 @@
 const express = require('express')
 const http = require('http')
 const socket = require('socket.io')
-
+const PORT = process.env.PORT || 3000
 const app = express()
 const server = http.createServer(app)
 const io = socket(server)
@@ -27,6 +27,6 @@ io.on('connection',(socket)=>{
 app.get('/',(req,res)=>{
     res.render('index')
 })
-server.listen(4000,()=>{
+server.listen(PORT,()=>{
     console.log("Server is Running AT:4000");
 })
