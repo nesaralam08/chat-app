@@ -108,9 +108,13 @@ input[type="text"]{
     position:absolute;
     top:60px;
     height:83.5dvh;
-    /* width:100%; */
     background-color:whitesmoke;
+    overflow-y:scroll;
     padding:20px;
+    /* width:100%; */
+}
+.message-box::-webkit-scrollbar{
+    scrollbar-width: none; 
 }
 .me{
     background-color:white;

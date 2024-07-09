@@ -28,5 +28,5 @@ app.get('/',(req,res)=>{
     res.render('index')
 })
 server.listen(PORT,()=>{
-    console.log("Server is Running AT:4000");
+    console.log(`Server is Running AT:${PORT}`);
 })

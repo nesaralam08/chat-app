@@ -13,7 +13,7 @@ socket.on('connecteduser', (data) => {
 socket.on('leftuser', (data) => {
     const onlineshow = document.getElementById('online-show');
     if (data!='' && data!=null)
-        onlineshow.innerText = `${data} is left.`;
+        onlineshow.innerText = `${data} left.`;
     setTimeout(() => {
         onlineshow.innerText = "";
     }, 3000);
